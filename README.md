@@ -1,11 +1,16 @@
-### This blockchain technology is for coin creators who don't want to fork a major coin like Bitcoin as their starting point. You might want to do this if:
+Basic usage: 
 
-✅  You would rather work in JavaScript than C++
+```
+const list = new LinkedList();
 
-✅  You are looking for a modern, simple, web-ready blockchain
+list.add('third');
+list.insert('second');
+list.add('fifth');
+list.insertAt(0, 'first');
+list.insertAt(3, 'seventh');
+list.add('sixth');
+list.removeAt(3);
+list.insertAt(3, 'fourth');
 
-✅  You don't need all the bells, whistles, environment, tests, and other overhead that Bitcoin (& others) have
-
-✅  You want more control over the tech so you can easily add/remove features
-
-✅  You want something easy and straightforward so you can focus on your project
+const expectation = 'first second third fourth fifth ';
+```
