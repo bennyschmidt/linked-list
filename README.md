@@ -1,4 +1,4 @@
-Basic usage: 
+Basic usage:
 
 ```
 const list = new LinkedList();
@@ -13,4 +13,11 @@ list.removeAt(3);
 list.insertAt(3, 'fourth');
 
 const expectation = 'first second third fourth fifth ';
+let output = '';
+
+for (let i = 0; i < 5; i++) {
+  output += `${list.itemAt(i).data} `;
+}
+
+console.log(`Test passed: ${output === expectation}`);
 ```
