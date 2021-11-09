@@ -81,7 +81,7 @@ class LinkedListItem {
   }
 }
 
-export { 
-  LinkedList, 
-  LinkedListItem 
-}
+module.exports = {
+  LinkedList,
+  LinkedListItem
+};
